@@ -129,7 +129,7 @@ table {
 body,
 html {
   font-size: 62.5%;
-  line-height: 62.5%;
+  line-height: 1.8em;
   height: 100%;
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -165,4 +165,31 @@ body {
 .section {
   text-align: center;
   padding: 50px 80px;
+}
+.section h2 {
+  font-size: 2.7rem;
+  font-weight: bolder;
+}
+.section-dark {
+  background-color: #fbeec1;
+  color: #666;
+}
+.section-light {
+  background-color: #659dbd;
+  color: #ddd;
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border {
+  background-color: #111;
+  color: #fbeec1;
+  padding: 20px;
 }
