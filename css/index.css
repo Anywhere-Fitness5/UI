@@ -126,6 +126,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#menu {
+  width: 35px;
+  height: 30px;
+  margin: 0px 0px 20px 0px;
+  padding: 30px;
+}
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  display: block;
+}
+#bar1 {
+  transform: translateY(-4px);
+}
+#bar3 {
+  transform: translateY(4px);
+}
+.change .bar {
+  background-color: green;
+}
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+.change #bar2 {
+  opacity: 0;
+}
 body,
 html {
   font-size: 62.5%;
@@ -134,7 +165,6 @@ html {
   margin: 0;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  line-height: 1.8rem;
   color: #666;
 }
 body {
