@@ -174,7 +174,7 @@ table {
   width: 0;
   height: 0;
   margin: 30px;
-  background: radial-gradient(circle, #e94498, #b81568);
+  background: radial-gradient(circle, green, rgba(0, 128, 0, 0.527));
   border-radius: 50%;
   transition: 0.3s ease;
 }
@@ -187,7 +187,7 @@ table {
   transform: translate(-50%, -20%);
 }
 .change .bar {
-  background-color: green;
+  background-color: white;
 }
 .change #bar1 {
   transform: translateY(4px) rotateZ(-45deg);
