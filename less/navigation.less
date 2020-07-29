@@ -1,7 +1,7 @@
 #menu{
     width: 35px;
     height: 30px;
-    margin: 0px 0px 20px 0px;
+    margin: 0;
     padding: 30px;
 }
 
@@ -37,35 +37,36 @@
 
 .nav{
     padding: 0;
-    margin: 0 20px;
+    margin: 0 0 0 100px;
     transition: 0.3s ease;
     display: none;
 }
 
-.menu-bg, #menu-bar{
+.menu-bg, .menu-bar{
     top: 0;
     left: 0;
     position: absolute;
 }
 
 .menu-bg{
-    z-index: -1;
+    z-index: 0;
     width: 0;
     height: 0;
     margin: 30px;
-    background: radial-gradient(circle, #659dbd, #659dbd);
+    background: radial-gradient(circle, #659dbd, #2084be);
     border-radius: 50%;
     transition: 0.3s ease;
+    
 }
 
-#menu-bar{
+.menu-bar{
     z-index: 2;
 }
 
 .change-bg{
     width: 550px;
-    height: 540px;
-    transform: translate(-50%, -20%);
+    height: 550px;
+    transform: translate(-40%, -40%);
 }
 
 .change .bar{
