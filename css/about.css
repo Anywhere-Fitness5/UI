@@ -146,6 +146,7 @@ table {
   transform: translateY(4px);
 }
 .nav li {
+  text-align: center;
   list-style: none;
   padding: 16px 0;
 }
@@ -159,9 +160,15 @@ table {
 }
 .nav {
   padding: 0;
-  margin: 0 0 0 100px;
+  margin: 0 0 0 115px;
   transition: 0.3s ease;
   display: none;
+}
+@media screen and (max-width: 500px) {
+  .nav {
+    margin-top: 75px;
+    margin-left: 100px;
+  }
 }
 .menu-bg,
 .menu-bar {
@@ -174,7 +181,7 @@ table {
   width: 0;
   height: 0;
   margin: 30px;
-  background: radial-gradient(circle, #659dbd, #2084be);
+  background: #659dbd;
   border-radius: 50%;
   transition: 0.3s ease;
 }
@@ -184,7 +191,16 @@ table {
 .change-bg {
   width: 550px;
   height: 550px;
-  transform: translate(-40%, -40%);
+  transform: translate(-35%, -25%);
+}
+@media screen and (max-width: 500px) {
+  .change-bg {
+    z-index: 1;
+    height: 100%;
+    transform: translate(0%, 0%);
+    border-radius: 0%;
+    margin: 0;
+  }
 }
 .change .bar {
   background-color: white;
@@ -293,9 +309,12 @@ body {
   padding: 100px 50px 100px 50px;
   position: relative;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 @media screen and (max-width: 500px) {
   .team {
+    padding-top: 50px;
     margin: 0;
   }
 }
@@ -303,6 +322,12 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+}
+@media screen and (max-width: 500px) {
+  .team img {
+    height: 100px;
+    width: 100px;
+  }
 }
 .team .member {
   padding-top: 30px;
