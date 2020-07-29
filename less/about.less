@@ -1,0 +1,55 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "global";
+@import "navigation";
+@import "footer";
+@import "home-page.less";
+
+
+.team{
+    overflow: hidden;
+    margin: 0px 400px 0px 400px;
+    padding: 100px 50px 100px 50px;
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+    @media screen and (max-width: 500px){
+        padding-top: 50px;
+        margin: 0;
+    }
+
+    img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+
+        @media screen and (max-width: 500px){
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    .member{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.pimg1{
+    min-height: 100%;
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+
+    @media screen and (max-width: 500px){
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+    }
+}

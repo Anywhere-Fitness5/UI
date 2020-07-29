@@ -14,24 +14,29 @@ body{
 
 .pimg1, .pimg2, .pimg3{
     position: relative;
-    opacity: 0.70;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     background-attachment: fixed;
+
+    @media screen and (max-width: 500px){
+        background-attachment: scroll;
+    }
 }
 .pimg1{
-    background-image: url('../img/image1.jpg');
+    background-image: url('../img/image-dot70.jpg');
     min-height: 100%;
 }
 .pimg2{
-    background-image: url('../img/image2.jpg');
+    background-image: url('../img/image222.jpg');
     min-height: 400px;
+    opacity: 0.70;
 }
 .pimg3{
-    background-image: url('../img/image3.jpg');
+    background-image: url('../img/image333.jpg');
     min-height: 400px;
+    opacity: 0.70;
 }
 
 .section{
@@ -71,5 +76,14 @@ body{
 .ptext .border{
     background-color: #111;
     color: #fbeec1;
-    padding: 20px;
+    padding: 10px;
+
+    @media screen and (max-width: 500px){
+        font-size: 13px;
+    }
+
+    
+}
+#border1{
+    opacity: 0.70;
 }
