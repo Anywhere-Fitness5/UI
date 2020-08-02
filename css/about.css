@@ -301,6 +301,17 @@ body {
   letter-spacing: 8px;
   text-transform: uppercase;
 }
+.ptext a:link {
+  text-decoration: none;
+  color: white;
+}
+.ptext a:visited {
+  color: #bc986a;
+}
+.ptext a:hover {
+  color: #659dbd;
+  text-decoration: underline;
+}
 .ptext .border {
   background-color: #111;
   color: #fbeec1;
@@ -357,6 +368,20 @@ body {
 .team .member {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.team h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #659dbd;
+}
+.team h3 {
+  font-size: 20px;
+}
+.team h4 {
+  font-size: 10px;
+}
+.team p {
+  color: #bc986a;
 }
 .pimg1 {
   min-height: 100%;
