@@ -301,6 +301,17 @@ body {
   letter-spacing: 8px;
   text-transform: uppercase;
 }
+.ptext a:link {
+  text-decoration: none;
+  color: white;
+}
+.ptext a:visited {
+  color: #bc986a;
+}
+.ptext a:hover {
+  color: #659dbd;
+  text-decoration: underline;
+}
 .ptext .border {
   background-color: #111;
   color: #fbeec1;
